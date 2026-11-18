@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-ink: #16131d;
+  --color-paper: #fffdfb;
+  --color-muted: #6e6878;
+  --color-line: #e8e4ee;
+  --color-soft: #f4f1f8;
+  --color-lilac: #e7e1fb;
+  --color-pink: #ec4f7c;
+  --color-pink-soft: #fde4ec;
+  --color-mint: #d9f5e6;
+  --font-sans: var(--font-geist-sans);
+}
+
+html,
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Bold outlined style with an offset shadow, used by buttons and cards. */
+.chunky {
+  border: 2px solid var(--color-ink);
+  box-shadow: 3px 4px 0 var(--color-ink);
+}
+.chunky-press {
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+.chunky-press:active {
+  transform: translate(2px, 3px);
+  box-shadow: 1px 1px 0 var(--color-ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    transition-duration: 1ms !important;
+  }
+}
