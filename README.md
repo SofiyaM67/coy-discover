@@ -2,6 +2,8 @@
 
 A swipe-based **Discover** tab for Coy, built as a standalone Next.js app. It has a tab bar with a blank **Home** tab (standing in for Coy's existing experience) and a **Discover** tab with all the functionality.
 
+**Live demo:** https://coy-discover-silk.vercel.app/discover (best viewed at phone width)
+
 ## Running it
 
 Requires Node 20+.
